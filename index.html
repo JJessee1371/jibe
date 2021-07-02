@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Jibe</title>
+</head>
+<body>
+    <header>
+        <h1>Build a thicker skin with Jibe</h1>
+    </header>
+    <section>
+        <h2>Give me some information to work with...</h2>
+        <form id="insult-form" class ="col s12">
+            <div class="input-field col s6">
+                <input placeholder="Enter name here" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+            </div>
+            <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Make it real mean!</span>
+                </label>
+            </p>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Insult me!
+            <i class="material-icons right">send</i>
+            </button>
+        </form>
+    </section>
+    <section>
+        <p id="result"></p>
+    </section>
+    
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
