@@ -13,6 +13,10 @@ body {
     margin-bottom: 15px;
 }
 
+.main-span {
+    color: rgb(160, 160, 25);
+}
+
 .main-subtext {
     text-align: center;
     color: whitesmoke;
@@ -45,7 +49,7 @@ input {
 
 #result {
     text-align: center;
-    font-size: 1.5em;
-    color: rgb(213, 41, 41);
+    font-size: 2em;
+    color: rgb(160, 160, 25);
     margin-bottom: 100px;
 }
