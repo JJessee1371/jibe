@@ -7,6 +7,9 @@ His very first programming project was an insult generator, and since he no long
 ## Project Screenshot
 ![jibe](https://user-images.githubusercontent.com/66571617/124294513-046d4c00-db15-11eb-8305-447b87476983.PNG)
 
+## Deployed Site
+https://jjessee1371.github.io/jibe/
+
 ## Technologies
 * HTML
 * Materialize CSS
