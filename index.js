@@ -1,4 +1,9 @@
-const regInsults = [
+const superRude = document.getElementById('extra-rude');
+const username = document.getElementById('first_name');
+const result = document.getElementById('result');
+
+//Insult arrays 
+const rudeInsults = [
     'You\'re a gray sprinkle on a rainbow cupcake.',
     'If your brain was dynamite, there wouldn\'t be enough to blow your hat off.',
     'I\'ll never forget the first time we met. But I\'ll keep trying',
@@ -17,7 +22,7 @@ const regInsults = [
     'Are you always this stupid or is today a special occasion?'
 ];
 
-const hardInsults = [
+const superRudeInsults = [
     'Don\'t be ashamed of who you are. That\'s your parents\' job.',
     'You are the human version of period cramps.',
     'Don\'t worry - the first 40 years of childhood are the hardest.',
@@ -31,9 +36,25 @@ const hardInsults = [
     'Keep rolling your eyes, maybe you\'ll find a brain back there.',
     'I\'d like to see things from your point of view but I can\'t seem to get my head that far up my ass.'
 ];
+console.log('Sanity check');
 
-function findInsult() {
-    let randomInsult =
-}
+function findRegInsult(user) {
+    let randomInsult = rudeInsults[Math.floor(Math.random() * rudeInsults.length)];
+    result.textContent = `Hey ${user}! ${randomInsult}`;
+};
 
-document.getElementById('insult-form').addEventListener()
+function findSuperRudeInsult(user) {
+    let randomInsult = superRudeInsults[Math.floor(Math.random() * superRudeInsults.length)];
+    result.textContent = `Hey ${user}! ${randomInsult}`;
+};
+
+document.getElementById('insult-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    let user = username.value;
+
+    if(superRude.checked) {
+        findSuperRudeInsult(user);
+    } else {
+        findRegInsult(user);
+    }
+});
