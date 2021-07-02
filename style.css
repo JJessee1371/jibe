@@ -1,0 +1,51 @@
+body {
+    background-image: linear-gradient(to bottom right, rgb(25, 24, 24), rgb(39, 36, 36), rgb(61, 54, 54), rgb(83, 72, 72));
+}
+
+.header-section {
+    margin-bottom: 60px;
+}
+
+.main-title {
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Inconsolata', monospace;
+    margin-bottom: 15px;
+}
+
+.main-subtext {
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Yomogi', cursive;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.fa-trash {
+    color: whitesmoke;
+}
+
+.form {
+    border: 5px solid whitesmoke;
+    width: 75%;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.form-header {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+input {
+    color: whitesmoke;
+}
+
+#result {
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(213, 41, 41);
+    margin-bottom: 100px;
+}

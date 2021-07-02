@@ -36,8 +36,8 @@ const superRudeInsults = [
     'Keep rolling your eyes, maybe you\'ll find a brain back there.',
     'I\'d like to see things from your point of view but I can\'t seem to get my head that far up my ass.'
 ];
-console.log('Sanity check');
 
+//Select random option from the arrays
 function findRegInsult(user) {
     let randomInsult = rudeInsults[Math.floor(Math.random() * rudeInsults.length)];
     result.textContent = `Hey ${user}! ${randomInsult}`;
@@ -48,9 +48,14 @@ function findSuperRudeInsult(user) {
     result.textContent = `Hey ${user}! ${randomInsult}`;
 };
 
+
 document.getElementById('insult-form').addEventListener('submit', (e) => {
     e.preventDefault();
     let user = username.value;
+    if(!user) {
+        alert('Listen here you... I need your name in order to insult you properly!');
+        return;
+    }
 
     if(superRude.checked) {
         findSuperRudeInsult(user);
